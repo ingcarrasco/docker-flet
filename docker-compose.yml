@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  flet:
+    container_name: flet
+    # image: ingcarrasco/docker-flet:1.0-alpine 
+    build: .
+    volumes:
+      - ./app:/app
+    ports:
+      - "8550:8550"
